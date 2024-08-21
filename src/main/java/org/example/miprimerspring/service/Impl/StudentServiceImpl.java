@@ -1,20 +1,21 @@
-package org.example.miprimerspring.service;
+package org.example.miprimerspring.service.Impl;
 
 import org.example.miprimerspring.entity.Student;
 import org.example.miprimerspring.repository.IStudentRepository;
+import org.example.miprimerspring.service.IStudentService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class StudentService implements IStudentService{
+public class StudentServiceImpl implements IStudentService {
 
     private final IStudentRepository iStudentRepository;
 
 
 
-    public StudentService(IStudentRepository iStudentRepository){
+    public StudentServiceImpl(IStudentRepository iStudentRepository){
         this.iStudentRepository = iStudentRepository;
     }
     @Override

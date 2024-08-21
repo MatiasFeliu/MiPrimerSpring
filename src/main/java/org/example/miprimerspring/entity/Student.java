@@ -21,7 +21,7 @@ public class Student {
     @Column(nullable = false, length = 50)
     private String name;
     @Column(name = "apellido", nullable = true, length = 50)
-    private String surname;
+    private String lastname;
     @Column(name = "fecha_nacimiento", nullable = false)
     private LocalDate birthDate;
     @Column(nullable = false, unique = true)
